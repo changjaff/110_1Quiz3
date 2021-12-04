@@ -11,7 +11,16 @@ namespace _110_1Quiz3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["name"] != null || Session["id"] != null)
+            {
+                Session.Abandon();
+                Response.Write("Session已被摧毀<br/>");
+            }
 
+            else
+            {
+                Response.Write("沒有Session<br/>");
+            }
         }
     }
 }

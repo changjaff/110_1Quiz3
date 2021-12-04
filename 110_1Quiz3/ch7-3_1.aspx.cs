@@ -18,6 +18,9 @@ namespace _110_1Quiz3
             Response.Write("Session已註冊，保存資訊有2 <br />");
             Response.Write("保存客戶端姓名"+ s_Name + "<br />");
             Response.Write("保存客戶端姓名" + s_Name + "<br />");
+            Response.Write("保存客戶端ID" + s_Id + "<br />");
+            Response.Write("會議室ID" + Session.SessionID + "<br />");
+            Response.Write("生命週期" + Session.Timeout.ToString() + "分鐘 <br />");
 
 
 
